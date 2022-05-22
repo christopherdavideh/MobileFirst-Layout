@@ -1,0 +1,360 @@
+/*  
+1. Posicionamiento position fix relative
+2. Modelo de Caja (Box Model) pading-marging-width-heigth
+3. Tipografia 
+4. Efectos Visuales 
+5. Miscelaneos u Otros  
+*/
+
+:root {
+    /*colores*/
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warm-black: #201E1C;
+    --black-secondary: #282623;
+    --grey: #BABABA;
+    --grey-text: #757575;
+    --grey-subtitle: #B5B0AC; 
+    --off-white: #FAF8F7;
+    --just-white: #FFFFFF;
+    --shadow: #C4C4C4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif; /* 'Inter', sans-serif; */
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(160.8deg, var(--warm-black) 16.69%, var(--bitcoin-orange) 100%);
+    
+}
+
+.header__title-container p {
+    color: var(--soft-orange);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-top: 24px;
+}
+
+.header__title-container h1{
+    color: var(--just-white);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+}
+
+header img {
+    width: 150px;
+    height: 24px;
+    margin-top: 33px;
+    justify-content: center;
+
+}
+
+.header__title-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+.header__title-container .header__button {
+    background: var(--off-white);
+    border: none;
+    border-radius: 4px;
+    /* Sombra */
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    color: var(--warm-black);
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    left: calc(50% - 118px);
+    line-height: 1.8rem;
+    margin-top: 32px;
+    padding: 15px 16px;
+    position: absolute;
+    top: 275px;
+    text-align: center;
+    text-decoration: none;
+    width: 229px;
+    height: 48px;
+}
+
+.header__button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('../icons/down-arrow.svg');
+}
+
+/* main */
+main {
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    background-color: var(--off-white);    
+}
+
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 59px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.main-exchange-container .main-exchange-container_background {
+    background-image: url('../img/Bitcoin.svg');
+    width: 195px;
+    height: 195px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    /*margin-top: 59px;*/
+}
+
+.main-exchange-container__title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-exchange-container__title h2 {
+    color: var(--warm-black);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    margin-top: 40px;
+}
+
+.main-exchange-container__title p {
+    color: var(--grey-text);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin-top: 24px;
+}
+
+/* table currency */
+.main-tables-container__currency-container {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-tables-container__currency-container .currency-container__title {
+    color: var(--bitcoin-orange);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2.344rem;
+    width: 70%;
+    min-width: 100px;
+    max-width: 400px;
+    text-align: start;    
+    margin: 0 auto;
+    margin-top: 48px;
+}
+
+.currency-container__table {
+    width: 90%;
+    min-width: 230px;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 12px;
+    box-shadow: 0px 5px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 8px;
+}
+
+.currency-container__table table {
+    width: 100%;
+    height: 100%;    
+}
+
+.currency-container__table td {
+    width: 50%;
+    background: var(--just-white);
+    padding: 10px 12px 10px 6px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.936rem;
+    color: var(--grey-subtitle);
+}
+
+.currency-container--top-left {
+    border-top-left-radius: 8px;
+}
+
+.currency-container--top-right {
+    border-top-right-radius: 8px;
+}
+
+.currency-container--bottom-left {
+    border-bottom-left-radius: 8px;
+}
+
+.currency-container--bottom-right {
+    border-bottom-right-radius: 8px;
+}
+
+.currency-cointainer__trending-up {
+    background-image: url(../icons/trending-up.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10.5px;
+}
+
+.currency-cointainer__trending-down {
+    background-image: url(../icons/trending-down.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10.5px;
+}
+
+.currency-container__date {
+    background: var(--soft-orange);
+    border-radius: 8px;
+    width: 90%;
+    min-width: 100px;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+.currency-container__date  p{
+    padding: 8px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.currency-container__table .currency-container--right {
+    color: var(--grey-text);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.694rem;
+}
+
+
+/* grid commission */
+.commission-container__title {
+    color: var(--secondary-blue);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2.344rem;
+    width: 70%;
+    min-width: 100px;
+    max-width: 400px;
+    text-align: start;    
+    margin: 0 auto;
+    margin-top: 48px;
+    padding-left: 28px;
+}
+
+.commission-container__table {
+    background: var(--off-white);
+    width: 70%;
+    min-width: 100px;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(90px, 200px ));
+    grid-auto-flow: row;
+    place-content: center;
+    gap: 1px;
+    margin-top: 12px;
+    box-shadow: 0px 5px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 8px;
+}
+
+.commission-container__table div {
+    background: var(--just-white);
+    padding: 10px 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.936rem;
+    color: var(--grey-subtitle);
+}
+
+.commission-container__top-right {
+    border-top-right-radius : 8px;
+}
+
+.commission-container__top-left {
+    border-top-left-radius: 8px;
+}
+
+.commission-container__bottom-left{
+    border-bottom-left-radius: 8px;
+}
+
+.commission-container__bottom-right {
+    border-bottom-right-radius: 8px;
+}
+
+.commission-container__text-right p {
+    color: var(--grey-text);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.694rem;
+}
+
+.commission-container__date {
+    background: var(--soft-blue);
+    border-radius: 8px;
+    width: 65%;
+    min-width: 100px;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+.commission-container__date  p{
+    padding: 8px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+
+}
