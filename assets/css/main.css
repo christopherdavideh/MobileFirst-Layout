@@ -163,6 +163,8 @@ main {
 }
 
 /* table currency */
+
+
 .main-tables-container__currency-container {
     width: 70%;
     min-width: 235px;
@@ -368,6 +370,8 @@ main {
     height: auto;
     color: var(--just-white);
     text-align: center;
+    padding: 20px 10px;
+    position: relative;
 }
 
 .main-product-container__img {
@@ -375,11 +379,9 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: block;
-    position: relative;
-    bottom: 10px;
-    text-align: center;
-    margin: 0 auto;
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 20px);
     width: 37.45px;
     height: 24px;
 }
@@ -388,11 +390,12 @@ main {
     color: #808080;
 }
 
-.main-product-container .main-product-container__title{
+.main-product-container__title{
     width: 90%;
-    min-width: 230px;
+    min-width: 288px;
+    height: auto;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .main-product-container__title h2 {
@@ -410,14 +413,13 @@ main {
 }
 
 .main-product-container__cards {
-    width: 100%;
-    min-width: 320px;
-    height: auto;
+    width: 90%;
+    min-width: 288px;
+    max-width: 1024px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
     color: var(--just-white);
-    padding-bottom: 46px;
     text-align: start;
 }
 
@@ -425,7 +427,7 @@ main {
     background-color: var(--black-secondary);
     width: 90%;
     min-width: 288px;
-    max-width: 350px;
+    max-width: 400px;
     margin: 0 auto;
     margin-bottom: 16px;
     border-radius: 4px;
@@ -478,6 +480,168 @@ main {
 
 /* Section About */
 
-.main-about_container {
-    
+.main-about-container {
+    width: 100%;
+    min-width: 320px;
+    background: radial-gradient(circle, rgba(209,134,57,1) 30%, rgba(32,30,28,1) 100%);
+    text-align: center;
 }
+
+.main-about-container .main-about-container__img {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url("../img/bitcoinbaby2x.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-about-container__img h2 {
+    color: var(--just-white);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    padding-top: 64px;
+}
+
+/* Plans section*/
+
+.main-plans-container {
+    background-color: var(--off-white);
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    text-align: center;
+}
+
+.main-plans-container .main-plans-container__title {
+    width: 90%;
+    min-width: 288px;
+    margin: 0 auto;
+    margin-top: 64px;
+}
+
+.main-plans-container__title h2 {
+    color: var(--warm-black);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+}
+
+.main-plans-container__title p {
+    color: var(--grey-text);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin-top: 24px;
+    margin-bottom: 50px;
+}
+
+.main-plans-container__price-cards {
+    display: flex;
+	overflow-x: scroll;
+    gap: 10px;
+	overscroll-behavior-x:contain;
+	scroll-snap-type:  x proximity;
+	padding-top: 4rem;
+}
+
+
+
+.main-plans-container__price-cards article {
+    position: relative;
+    scroll-snap-align: center;
+    background-color: var(--just-white);    
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 8px;
+    width: 90%;
+    min-width: 197px;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+} 
+
+.price-cards__header {
+    color: var(--just-white);
+    position: absolute;
+    left: calc(50% - 48px);
+    top: -15px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 8px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.price-cards__body h3{
+    color: #000;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-top: 31px;    
+}
+
+.price-cards__body p{
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 5.2rem;
+    position: relative;
+    line-height: 6.3rem;
+    margin-top: 8px; 
+}
+
+.price-cards__body .price-cards__detail{
+    color: var(--grey-text);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-top: 16px;
+    padding: 0 16px;
+}
+
+.price-cards__body .price-cards__logo-dollar{
+    color: #363636;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    top: -8px;
+    left: 40px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-top: 16px;
+    padding: 0 16px;
+}
+
+.price-cards__body button {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    border: 0.2rem solid var(--bitcoin-orange);
+    border-radius: 4px;
+    background-color: #FAF8F7; 
+    font-family: 'DM Sans', sans-serif; 
+    width: 150px;
+    height: 48px;
+}
+
+.price-cards__arrow-left {
+    background-image: url("../icons/arrow-right.svg");
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 6px;
+    vertical-align: text-bottom;
+}
+
+
+
