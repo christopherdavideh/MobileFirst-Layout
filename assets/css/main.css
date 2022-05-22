@@ -239,7 +239,7 @@ main {
 }
 
 .currency-cointainer__trending-down {
-    background-image: url(../icons/trending-down.svg);
+    background-image: url('../icons/trending-down.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -357,4 +357,127 @@ main {
     font-weight: 400;
     line-height: 1.5rem;
 
+}
+
+/* Product Section  */
+
+.main-product-container {
+    background-color: var(--warm-black);
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    color: var(--just-white);
+    text-align: center;
+}
+
+.main-product-container__img {
+    background-image: url('../icons/batata.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    bottom: 10px;
+    text-align: center;
+    margin: 0 auto;
+    width: 37.45px;
+    height: 24px;
+}
+
+.main-product-container p {
+    color: #808080;
+}
+
+.main-product-container .main-product-container__title{
+    width: 90%;
+    min-width: 230px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.main-product-container__title h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+}
+
+.main-product-container__title p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.main-product-container__cards {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    color: var(--just-white);
+    padding-bottom: 46px;
+    text-align: start;
+}
+
+.main-product-container__cards .cards__detail{
+    background-color: var(--black-secondary);
+    width: 90%;
+    min-width: 288px;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.cards__detail h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    text-align: left;
+    padding: 12px 16px 10px 16px;
+}
+
+.cards__detail p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    text-align: left;
+    padding: 0 16px 22px 20px;
+}
+
+.cards__detail--clock, .cards__detail--eye, .cards__detail--money, .cards__detail--check {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    justify-content: start;
+    width: 24px;
+    height: 24px;    
+    margin: 16px 0 0 16px; 
+}
+
+.cards__detail--clock {
+    background-image: url('../icons/clock.svg');
+
+}
+
+.cards__detail--eye {
+    background-image: url('../icons/eye.svg');
+}
+
+.cards__detail--money {
+    background-image: url('../icons/dollar-sign.svg');
+}
+
+.cards__detail--check {
+    background-image: url('../icons/check-circle.svg');
+}
+
+/* Section About */
+
+.main-about_container {
+    
 }
