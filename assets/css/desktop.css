@@ -1,0 +1,9 @@
+.main-tables-container__currency-container {
+    margin: 0 0 0 100px;
+}
+
+.main-tables-container__commission-container {
+    min-width: 300px;
+    margin: 0 100px;
+}
+

@@ -1,0 +1,30 @@
+.main-tables-container {
+    overflow-x: auto;      
+    justify-content: center;
+}
+
+/*.main-product-container__cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto;
+}*/
+
+.main-product-container__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px
+}
+
+.main-product-container__cards .cards__detail{
+    width: 40%;
+    max-width: 500px;
+}
+
+.main-plans-container__price-cards {
+	overflow-x: auto;
+    justify-content: center;
+}
+
+
+

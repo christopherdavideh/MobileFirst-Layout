@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/tablet.css" media="screen and (min-width: 666px)">
+    <link rel="stylesheet" href="./assets/css/desktop.css" media="screen and (min-width: 1024px)">
 </head>
 <body>
     <header>
@@ -138,7 +140,7 @@
                 <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
             </div>
             <section class="main-plans-container__price-cards">
-                <article class="carousel__item">
+                <article>
                     <div class="price-cards__body">
                         <h3>Pago Anual</h3>
                         <p><span class="price-cards__logo-dollar">$</span> 99</p>
@@ -146,7 +148,7 @@
                         <button>Escoger este <span class="price-cards__arrow-left"></span></button>               
                     </div>                    
                 </article>
-                <article class="carousel__item">
+                <article>
                     <p class="price-cards__header">Recomendado</p>
                     <div class="price-cards__body">
                         <h3>Pago Anual</h3>
@@ -155,7 +157,7 @@
                         <button>Escoger este <span class="price-cards__arrow-left"></span></button>               
                     </div>                    
                 </article>
-                <article class="carousel__item">
+                <article>
                     <div class="price-cards__body">
                         <h3>Pago Anual</h3>
                         <p><span class="price-cards__logo-dollar">$</span> 99</p>
@@ -167,7 +169,24 @@
         </section>
     </main>
     <footer>
-
+        <section class="footer-list">
+            <ul>
+                <li class="footer-list__item"><a href="#">Linkedin</a></li>
+                <li class="footer-list__item"><a href="#">Crunchbase</a></li>
+                <li class="footer-list__item"><a href="#">Hackernews</a></li>
+            </ul>
+        </section>
+        <section class="footer-img">
+            <picture>
+                <source media="(min-width: 600px)"
+                        srcset="./assets/img/logo-footer.svg" />
+                <source media="(min-width: 300px) and (max-width: 600px)"
+                        srcset="./assets/img/logo-footer.svg" />
+                <source media="(max-width: 50px)"
+                        srcset="./assets/img/logo-footer.svg" />
+                <img src="./assets/img/logo-footer.svg" alt="logo--footer empresa" />
+            </picture> 
+        </section>
     </footer>
 </body>
 </html>
