@@ -1,11 +1,15 @@
 # MobileFirst-Layout
 
-frontend de un sitio web partiendo de su wireframe, analizamos su arquitectura y construimos en código cada una de sus partes para que este se adapte a cualquier dispositivo de los usuarios usando la metodología Mobile First
+Frontend of a website based on its wireframe, we analyze its architecture and we build in code each of its parts so that it adapts to any device of the users using the Mobile First methodology.
 
--   Creación y aplicación de estilos con CSS que se puedan reutilizar
--   Aplicación de la metodología BEM
--   Auditoría con Lighthouse
--   Aplicacíon de media queries para adaptar las vistas a varios dispositivos
--   Analizar la arquitectura del proyecto partiendo de un wireframe
+- Creation and application of styles with reusable CSS.
+- Application of BEM methodology.
+- Lighthouse Audit.
+- Application of media queries to adapt the view to any device.
+- Analyze the project architecture starting from a wireframe.
+
+![](http://christopherdavideh.com/images/mobile-first.png)
 ![Fuente: Platzi.com](https://static.platzi.com/media/landing-projects/mobile-first_proyecto.gif)
+
+[Demo](https://christopherdavideh.github.io/MobileFirst-Layout/)
 
